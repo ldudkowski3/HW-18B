@@ -1,7 +1,17 @@
-.bodyGrid{
+nav{
+  display: flex;
+  background-color: white;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navGrid{
   display:grid;
-  margin: 20px 100px 0px 100px;
-  grid-template-rows: 90px auto;
+  margin: 10px 100px 0px 100px;
+  grid-template-rows: 90px;
   grid-template-columns: 150px auto;
 }
 
@@ -22,13 +32,12 @@
 
 .navigationBar{
   /* border:1px solid  red; */
-  position: fixed;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  display: flex;
+  /* display: flex; */
 }
 
-.nav{
+.navList{
   list-style-type: none;
   padding-left: 0px;
   margin-top: 5px;
@@ -52,9 +61,10 @@
 
 
 .contentArea{
-  /* border:1px solid  red; */
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
+  /* border: 1px solid red; */
+  display: block;
+  margin: 90px 250px 0px 250px;
+  /* height: 1200px; */
 }
 
 .sliderContainer{
@@ -80,6 +90,35 @@ h2 {
   padding-left: 0px;
 }
 
+p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #505050;
+  padding-left: 0px;
+}
+
+.buttonContainer{
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: orange;
+  display: inline-block;
+  border-radius: 7px;
+  text-align: center;
+  border: 0px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -91,7 +130,6 @@ footer {
 }
 
 footer ul {
-  
   font-family: 'Roboto', sans-serif;
   color: #555555;
   align-items: center;
